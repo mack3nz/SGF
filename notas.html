@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco de Notas - SGF</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Bloco de Notas</h1>
+        <p>Anote seu treino e acompanhe seu desempenho.</p>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h2>Minhas Anotações</h2>
+            <form id="formNotas">
+                <div class="form-group">
+                    <label for="tituloNota">Título da Nota:</label>
+                    <input type="text" id="tituloNota" required>
+                </div>
+                <div class="form-group">
+                    <label for="conteudoNota">Conteúdo da Nota:</label>
+                    <textarea id="conteudoNota" placeholder="Escreva sua anotação aqui..." rows="10" required></textarea>
+                </div>
+                <button type="submit" id="salvarNota" class="botao-principal">Salvar Nota</button>
+            </form>
+            
+            <div id="mensagemNota" class="resultado" style="display:none;"></div>
+            
+            <h3>Histórico de Anotações</h3>
+            <ul id="listaNotas" class="historico-lista">
+                </ul>
+
+            <a href="index.html" class="voltar">Voltar ao Menu Principal</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SGF - Sistema Fitness. Todos os direitos reservados. Pelotas, Rio Grande do Sul, Brasil.</p>
+    </footer>
+    
+    <script src="https://unpkg.com/dexie@3.2.3/dist/dexie.js"></script>
+    <script src="./assets/js/database.js"></script>
+    <script src="./assets/js/notas.js"></script>
+</body>
+</html>

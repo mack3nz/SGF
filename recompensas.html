@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgate de Recompensas - SGF</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Resgate de Recompensas</h1>
+        <p>Troque seus pontos por prêmios incríveis!</p>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h2>Seu Saldo de Pontos: <span id="pontosTotal">0</span></h2>
+            <div id="mensagemResgate" class="resultado" style="display:none;"></div>
+
+            <h2>Recompensas Disponíveis</h2>
+            <div class="lista-recompensas" id="listaRecompensas">
+                </div>
+            <a href="index.html" class="voltar">Voltar ao Menu Principal</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SGF - Sistema Fitness. Todos os direitos reservados. Pelotas, Rio Grande do Sul, Brasil.</p>
+    </footer>
+
+    <script src="https://unpkg.com/dexie@3.2.3/dist/dexie.js"></script>
+    <script src="./assets/js/database.js"></script>
+    <script src="./assets/js/recompensas.js"></script>
+</body>
+</html>

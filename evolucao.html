@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Evolução - SGF</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Evolução</h1>
+        <p>Veja seu progresso e se inspire para ir mais longe!</p>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h2>Registrar Peso</h2>
+            <form id="formPeso">
+                <div class="form-group">
+                    <label for="pesoInput">Peso (kg):</label>
+                    <input type="number" id="pesoInput" name="peso" step="0.1" required>
+                </div>
+                <button type="submit" class="botao-principal">Salvar Peso</button>
+            </form>
+
+            <h2>Histórico de Peso</h2>
+            <ul id="historicoPeso" class="historico-lista">
+                </ul>
+            
+            <a href="index.html" class="voltar">Voltar ao Menu Principal</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SGF - Sistema Fitness. Todos os direitos reservados. Pelotas, Rio Grande do Sul, Brasil.</p>
+    </footer>
+    
+    <script src="https://unpkg.com/dexie@3.2.3/dist/dexie.js"></script>
+    <script src="./assets/js/database.js"></script>
+    <script src="./assets/js/evolucao.js"></script>
+</body>
+</html>

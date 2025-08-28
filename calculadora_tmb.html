@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora TMB - SGF</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora TMB</h1>
+        <p>Descubra quantas calorias seu corpo precisa para funcionar em repouso.</p>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h2>Calcule sua TMB</h2>
+            <form id="formTMB">
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" required>
+                </div>
+                <div class="form-group">
+                    <label for="altura">Altura (cm):</label>
+                    <input type="number" id="altura" name="altura" required>
+                </div>
+                <div class="form-group">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" name="peso" step="0.1" required>
+                </div>
+                <div class="form-group">
+                    <label>Gênero:</label>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" name="genero" value="homem" required>
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="feminino" name="genero" value="mulher">
+                </div>
+                <div class="form-group">
+                    <label for="atividade">Atividade física:</label>
+                    <select id="atividade" name="atividade" required>
+                        <option value="">Selecione...</option>
+                        <option value="ativa">Ativa</option>
+                        <option value="regular">Regular</option>
+                        <option value="nula">Nula</option>
+                    </select>
+                </div>
+                <button type="submit">Calcular TMB e Macros</button>
+            </form>
+
+            <div class="resultado" id="resultado">
+                </div>
+            
+            <a href="index.html" class="voltar">Voltar ao Menu Principal</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SGF - Sistema Fitness. Todos os direitos reservados. Pelotas, Rio Grande do Sul, Brasil.</p>
+    </footer>
+    
+    <script src="./assets/js/calculadora.js"></script>
+</body>
+</html>
