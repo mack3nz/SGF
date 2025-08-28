@@ -1,0 +1,310 @@
+/* Importação de fonte moderna e sóbria */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Estilos globais do corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121214; /* Fundo escuro */
+    color: #e1e1e6; /* Cor do texto principal */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos do cabeçalho (Header) */
+header {
+    background-color: #202024;
+    color: #00b37e; /* Cor verde vibrante para destaque */
+    padding: 2.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #c4c4cc;
+}
+
+/* Estilos do conteúdo principal (Main) */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centralização vertical */
+    padding: 2rem 1rem;
+}
+
+/* Estilos da seção de conteúdo e do menu */
+.conteudo, .menu {
+    background-color: #202024;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #323238;
+}
+
+.conteudo h2, .menu h2, .conteudo h3 { /* Adicionado h3 aqui */
+    color: #00b37e;
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.conteudo p, .menu p {
+    font-size: 1.1rem;
+    color: #8d8d99;
+}
+
+/* Estilos para a lista de links (menu) */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.menu li {
+    margin-bottom: 1rem;
+}
+
+.menu a {
+    display: block;
+    padding: 1.2rem;
+    background-color: #323238;
+    color: #e1e1e6;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    background-color: #00b37e;
+    color: #121214;
+    transform: translateY(-4px);
+}
+
+/* Estilos de formulários */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+    color: #c4c4cc;
+}
+
+.form-group input[type="text"], /* Adicionado input type text */
+.form-group input[type="number"], 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    background-color: #121214;
+    border: 1px solid #323238;
+    border-radius: 8px;
+    color: #e1e1e6;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Estilos para botões gerais */
+.conteudo button, .botao-principal {
+    background-color: #00b37e;
+    color: #121214;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 1rem;
+}
+
+.conteudo button:hover, .botao-principal:hover {
+    background-color: #008f65;
+    transform: translateY(-2px);
+}
+
+/* Estilos para resultados e mensagens de feedback */
+.resultado {
+    background-color: #29292e;
+    border: 1px solid #323238;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: left;
+    color: #e1e1e6;
+}
+
+.resultado h3, .resultado h4 {
+    color: #00b37e;
+}
+
+.resultado p strong {
+    color: #c4c4cc;
+}
+
+.macros ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.macros li {
+    background-color: #323238;
+    padding: 0.75rem;
+    border-left: 4px solid #00b37e;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para a lista de recompensas */
+.lista-recompensas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.recompensa-item {
+    background-color: #29292e;
+    border: 1px solid #323238;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.recompensa-item h3 {
+    margin-top: 0;
+    color: #00b37e;
+}
+
+.recompensa-item p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e1e1e6;
+}
+
+.recompensa-item button {
+    background-color: #00b37e;
+    color: #121214;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.recompensa-item button:hover {
+    background-color: #008f65;
+}
+
+.recompensa-item button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+/* Estilos para mensagens de sucesso e erro */
+#mensagem, #mensagemNota, #mensagemResgate {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    color: #00b37e;
+    background-color: #202024;
+    border: 1px solid #00b37e;
+    display: none;
+}
+
+/* Estilos para o histórico de evolução e bloco de notas */
+.historico-lista {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.historico-lista li {
+    background-color: #29292e;
+    border: 1px solid #323238;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s;
+    text-align: left; /* Alinhamento do texto dentro do item da lista */
+}
+
+.historico-lista li:hover {
+    background-color: #323238;
+}
+
+.historico-lista li strong { /* Estilo para o título da nota */
+    color: #00b37e;
+    font-size: 1.1em;
+}
+
+.historico-lista li small { /* Estilo para a data da nota */
+    display: block;
+    color: #8d8d99;
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+.historico-lista li p { /* Estilo para o conteúdo da nota */
+    color: #c4c4cc;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+
+/* Estilos do rodapé (Footer) */
+footer {
+    background-color: #121214;
+    color: #6a6a75;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #323238;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #00b37e;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+
+.recompensa-imagem {
+    width: 150px; /* Defina um tamanho fixo para as imagens */
+    height: 150px;
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorção */
+    margin-bottom: 1rem;
+    border-radius: 8px; /* Opcional: para um visual mais suave */
+}
+
+.voltar:hover {
+    color: #e1e1e6;
+}
